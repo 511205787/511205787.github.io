@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "academicpages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "About me"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -11,7 +11,7 @@ redirect_from:
 I'm a second year undergraduate student from [School of EIEE](https://www.seiee.sjtu.edu.cn/), [Shanghai Jiao Tong University](https://www.sjtu.edu.cn/). 
 My research interests include Physics-informed Machine Learning, Neural Symbolic Regression, and Neural Operator, with a focus on their applications in control and power systems.
 
-You can find my CV here:[Yuchen Wang's Curriculum Vitae](../assets/CV.pdf).
+You can find my CV here: [Yuchen Wang's Curriculum Vitae](../assets/CV.pdf).
 
 Education
 ======
