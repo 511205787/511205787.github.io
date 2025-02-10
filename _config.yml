@@ -86,7 +86,7 @@ author:
   location         : "China"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : #"http://yourfullgooglescholarurl.com"
+  googlescholar    : "https://scholar.google.com/citations?user=pTLy_cgAAAAJ&hl=en"
   email            : "ywang142@wm.edu"
   researchgate     :  "https://www.researchgate.net/profile/Yuchen-Wang-124"
   uri              :
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "https://github.com/511205787"
+  github           : "https://github.com/511205787?tab=repositories"
   google_plus      :
   keybase          :
   instagram        :
