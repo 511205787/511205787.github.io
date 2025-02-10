@@ -6,6 +6,6 @@ date: 2023-12-01
 venue: 'Journal of Energy Storage'
 paperurl: 'http://academicpages.github.io/files/paper1.pdf'
 ---
-[Paper link](http://academicpages.github.io/files/paper1.pdf)
+[Paper link](https://www.sciencedirect.com/science/article/abs/pii/S2352152X23022600)
 
 Wang, Yuchen, et al. "Temperature state prediction for lithium-ion batteries based on improved physics informed neural networks." Journal of Energy Storage 73 (2023): 108863.
