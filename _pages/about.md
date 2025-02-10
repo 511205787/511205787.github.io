@@ -19,6 +19,9 @@ Education
 •	M.S. in Control Science & Engineering (2024), Shanghai Jiao Tong University, Shanghai, China.
 •	B.E. in Automation (2021), North China Electric Power University, Baoding, China.
 
+News
+======
+
 Contact Information
 ======
 •	Phone: +86 18355171118 <br>
