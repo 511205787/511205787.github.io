@@ -6,7 +6,7 @@ excerpt: 'This paper is about the number 1. The number 2 is left for future work
 date: 2023-12-01
 venue: 'Journal of Energy Storage'
 paperurl: 'http://academicpages.github.io/files/paper1.pdf'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+citation: 'Wang, Y., Xiong, C., Wang, Y., Xu, P., Ju, C., Shi, J., ... & Chu, J. (2023). Temperature state prediction for lithium-ion batteries based on improved physics informed neural networks. Journal of Energy Storage, 73, 108863.'
 ---
 
 [Paper link](http://academicpages.github.io/files/paper1.pdf)
