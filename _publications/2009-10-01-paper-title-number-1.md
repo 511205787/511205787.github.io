@@ -4,7 +4,6 @@ collection: publications
 permalink: /publication/2009-10-01-paper-title-number-1
 date: 2023-12-01
 venue: 'Journal of Energy Storage'
-paperurl: 'http://academicpages.github.io/files/paper1.pdf'
 ---
 [Paper link](https://www.sciencedirect.com/science/article/abs/pii/S2352152X23022600)
 
