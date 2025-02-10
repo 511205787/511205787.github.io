@@ -15,7 +15,7 @@ You can find my CV here: [Yuchen Wang's Curriculum Vitae](../assets/CV.pdf).
 
 Education
 ======
-•	Phd. in Computer Science(2024-present), William & Mary, Williamsburg, United States.<br>
+•	Phd. in Computer Science (2024-present), William & Mary, Williamsburg, United States.<br>
 •	M.S. in Control Science & Engineering (2024), Shanghai Jiao Tong University, Shanghai, China.<br>
 •	B.E. in Automation (2021), North China Electric Power University, Baoding, China.
 
