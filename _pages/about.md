@@ -22,4 +22,4 @@ Education
 Contact Information
 ======
 •	Phone: +86 18355171118 <br>
-•	Email: wyc_077@sjtu.edu.cn
+•	Email: ywang142@wm.edu
