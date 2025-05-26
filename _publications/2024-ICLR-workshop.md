@@ -8,5 +8,5 @@ citation: Zhao, H., Wang, Y., Qi, H., Li, J., Sha, L., Zhao, H., & Shao, H. (202
 ---
 Hongjue Zhao, **Yuchen Wang**, Hairong Qi, Jiajia Li, Lui Sha, Han Zhao, and Huajie Shao.
 
-[Paper link]([https://ieeexplore.ieee.org/abstract/document/10462637](https://openreview.net/forum?id=C8tlOCzqll&noteId=l7nUWhiwog))
+[Paper link](https://openreview.net/forum?id=C8tlOCzqll&noteId=l7nUWhiwog)
 
