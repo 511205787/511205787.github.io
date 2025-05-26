@@ -2,7 +2,7 @@
 title: "Accelerating Neural Differential Equations for Irregularly-Sampled Dynamical Systems Using Variational Formulation"
 collection: publications
 permalink: /publication/2024-ICLR-workshop
-date: 2024-03
+date: 2024-03-01
 venue: 'ICLR 2024 Workshop on AI4DifferentialEquations In Science'
 citation: Zhao, H., Wang, Y., Qi, H., Li, J., Sha, L., Zhao, H., & Shao, H. (2024, March). Accelerating Neural Differential Equations for Irregularly-Sampled Dynamical Systems Using Variational Formulation. In ICLR 2024 Workshop on AI4DifferentialEquations In Science..
 ---
