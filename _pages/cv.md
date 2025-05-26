@@ -15,6 +15,30 @@ Education
 * M.S. in Control Science & Engineering, School of Electronic Information and Electrical Engineering, Shanghai Jiao Tong University, Sep 2021 – Mar 2024  
 * B.E. in Automation, School of Control and Computer Engineering, North China Electric Power University, Sep 2017 – Jul 2021  
 
+  
+<!-- Skills
+======
+* Skill 1
+* Skill 2
+  * Sub-skill 2.1
+  * Sub-skill 2.2
+  * Sub-skill 2.3
+* Skill 3 -->
+
+Publications
+======
+  <ul>{% for post in site.publications %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
+
+
+Honors & Awards
+======
+* Outstanding Graduate Award, Shanghai Jiao Tong University — 2024  
+* Graduate Student Merit Scholarship, Shanghai Jiao Tong University — 2023  
+* Second‑Class Academic Scholarship, Shanghai Jiao Tong University — 2022  
+* Third‑Class College Scholarship, North China Electric Power University — 2020  
+* Alumni Scholarship, North China Electric Power University — 2019  
 
 Research Experiences
 ======
@@ -63,31 +87,6 @@ Work Experiences
 **Advisor:** Prof. Changjiang Ju  
 - Developed industrial PLC HMI software in C#, including firmware‐update and file‑operation modules.  
 - Co‑authored a research report on the hydrogen energy industry.  
-
-  
-<!-- Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3 -->
-
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-
-
-Honors & Awards
-======
-* Outstanding Graduate Award, Shanghai Jiao Tong University — 2024  
-* Graduate Student Merit Scholarship, Shanghai Jiao Tong University — 2023  
-* Second‑Class Academic Scholarship, Shanghai Jiao Tong University — 2022  
-* Third‑Class College Scholarship, North China Electric Power University — 2020  
-* Alumni Scholarship, North China Electric Power University — 2019  
 
 <!-- Talks
 ======
