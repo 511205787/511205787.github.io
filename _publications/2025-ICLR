@@ -1,1 +1,13 @@
-11
+---
+title: "Accelerating Neural ODEs: A Variational Formulation-based Approach"
+collection: publications
+permalink: /publication/2025-ICLR
+date: 2025-04
+venue: 'The Thirteenth International Conference on Learning Representations (ICLR)'
+citation: Zhao, H., Wang, Y., Qi, H., Huang, Z., Zhao, H., Sha, L., & Shao, H. (2025). Accelerating Neural ODEs: A Variational Formulation-based Approach. In The Thirteenth International Conference on Learning Representations.
+---
+Hongjue Zhao, Yuchen Wang, Hairong Qi, Zijie Huang, Han Zhao, Lui Sha, Huajie Shao.
+
+[Paper link](https://openreview.net/forum?id=trV41CpAK4)
+
+[Github Link] (https://github.com/ZhaoHongjue/VF-NODE-ICLR2025)
