@@ -21,6 +21,15 @@ Education
 News
 ======
 
+Honors & Awards
+======
+* Outstanding Graduate Award, Shanghai Jiao Tong University — 2024  
+* Graduate Student Merit Scholarship, Shanghai Jiao Tong University — 2023  
+* Second‑Class Academic Scholarship, Shanghai Jiao Tong University — 2022  
+* Third‑Class College Scholarship, North China Electric Power University — 2020  
+* Alumni Scholarship, North China Electric Power University — 2019  
+
+
 Contact Information
 ======
 •	Phone: +1 757-332-8055 <br>
