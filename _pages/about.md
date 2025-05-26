@@ -24,5 +24,5 @@ News
 
 Contact Information
 ======
-•	Phone: +86 18355171118 <br>
+•	Phone: +1 757-332-8055 <br>
 •	Email: ywang142@wm.edu
