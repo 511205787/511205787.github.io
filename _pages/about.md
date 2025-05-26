@@ -8,8 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm a first year phd student from William & Mary. 
-My research interests include Physics-informed Machine Learning, Neural Symbolic Regression, and Neural Operator, with a focus on their applications in control and power systems.
+I'm a first year phd student from William & Mary, advised by Professor [Huajie Shao](https://huajieshao.github.io/index.html). My current research interest focuses on developing physics‑informed machine learning methods to build generalizable world models, with applications spanning robotics, autonomous driving, and power systems.
 
 You can find my CV here: [Yuchen Wang's Curriculum Vitae](../assets/CV.pdf).
 
