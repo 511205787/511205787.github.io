@@ -9,8 +9,14 @@
 {% assign pub_id = post.slug | default: post.url | slugify %}
 {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
 {% assign authors = post.authors | default: post.excerpt | markdownify | remove: "<p>" | remove: "</p>" %}
+{% capture search_blob %}{{ post.title }} {{ post.authors | strip_html }} {{ post.venue }} {{ post.date | date: "%Y" }} {{ post.abstract }}{% endcapture %}
 
-<article class="publication-card{% if teaser %} publication-card--with-image{% else %} publication-card--text-only{% endif %}" itemscope itemtype="http://schema.org/CreativeWork">
+<article
+  class="publication-card{% if teaser %} publication-card--with-image{% else %} publication-card--text-only{% endif %}"
+  itemscope
+  itemtype="http://schema.org/CreativeWork"
+  data-year="{{ post.date | date: "%Y" }}"
+  data-search="{{ search_blob | strip_html | strip_newlines | replace: '"', '&quot;' | downcase }}">
   {% if teaser %}
   <div class="publication-card__media">
     <img

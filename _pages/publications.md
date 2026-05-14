@@ -33,6 +33,56 @@ author_profile: true
     margin-top: 1.75rem;
   }
 
+  .publication-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+    margin: 1.35rem 0 1.2rem;
+  }
+
+  .publication-filters__input,
+  .publication-filters__select {
+    min-height: 3rem;
+    border: 1px solid #d7d0bf;
+    border-radius: 0.75rem;
+    background: #fffdfa;
+    color: #383838;
+    font: inherit;
+  }
+
+  .publication-filters__input {
+    flex: 1 1 18rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .publication-filters__select {
+    min-width: 9rem;
+    padding: 0.8rem 2.6rem 0.8rem 1rem;
+  }
+
+  .publication-filters__clear {
+    min-height: 3rem;
+    padding: 0.8rem 1.2rem;
+    border: 1px solid #d7d0bf;
+    border-radius: 0.75rem;
+    background: #fffdfa;
+    color: #5f5a4f;
+    cursor: pointer;
+    font: inherit;
+  }
+
+  .publication-filters__clear:hover {
+    color: #2f2f2f;
+    border-color: #b59a4a;
+  }
+
+  .publication-empty {
+    display: none;
+    margin-top: 1rem;
+    color: #746f63;
+    font-size: 0.98rem;
+  }
+
   .publication-card {
     display: grid;
     gap: 1.5rem;
@@ -194,9 +244,74 @@ author_profile: true
 
 {% include base_path %}
 
-<div class="publication-list">
 {% assign publications_sorted = site.publications | sort: "date" | reverse %}
+<div class="publication-filters" aria-label="Publication filters">
+  <input id="publication-search" class="publication-filters__input" type="search" placeholder="Search publications...">
+  <select id="publication-date" class="publication-filters__select" aria-label="Filter publications by year">
+    <option value="">Date</option>
+    {% assign seen_year = "" %}
+    {% for post in publications_sorted %}
+      {% assign post_year = post.date | date: "%Y" %}
+      {% unless post_year == seen_year %}
+    <option value="{{ post_year }}">{{ post_year }}</option>
+        {% assign seen_year = post_year %}
+      {% endunless %}
+    {% endfor %}
+  </select>
+  <button id="publication-clear" class="publication-filters__clear" type="button">Clear</button>
+</div>
+
+<div class="publication-list">
 {% for post in publications_sorted %}
   {% include archive-single-publication-card.html %}
 {% endfor %}
 </div>
+
+<p id="publication-empty" class="publication-empty">No publications match the current filters.</p>
+
+<script>
+  (function () {
+    var searchInput = document.getElementById("publication-search");
+    var yearSelect = document.getElementById("publication-date");
+    var clearButton = document.getElementById("publication-clear");
+    var cards = Array.prototype.slice.call(document.querySelectorAll(".publication-list .publication-card"));
+    var emptyState = document.getElementById("publication-empty");
+
+    if (!searchInput || !yearSelect || !clearButton || !cards.length) {
+      return;
+    }
+
+    function normalize(value) {
+      return (value || "").toLowerCase().trim();
+    }
+
+    function applyFilters() {
+      var query = normalize(searchInput.value);
+      var year = yearSelect.value;
+      var visibleCount = 0;
+
+      cards.forEach(function (card) {
+        var haystack = normalize(card.getAttribute("data-search"));
+        var cardYear = card.getAttribute("data-year");
+        var matchesQuery = !query || haystack.indexOf(query) !== -1;
+        var matchesYear = !year || cardYear === year;
+        var visible = matchesQuery && matchesYear;
+
+        card.style.display = visible ? "" : "none";
+        if (visible) {
+          visibleCount += 1;
+        }
+      });
+
+      emptyState.style.display = visibleCount ? "none" : "block";
+    }
+
+    searchInput.addEventListener("input", applyFilters);
+    yearSelect.addEventListener("change", applyFilters);
+    clearButton.addEventListener("click", function () {
+      searchInput.value = "";
+      yearSelect.value = "";
+      applyFilters();
+    });
+  })();
+</script>
