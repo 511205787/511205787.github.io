@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Yuchen Wang"
   avatar           : "profile.png"
-  bio              : "First year Ph.D student at William & Mary. Research in Physics-based ML, Autonomous Driving."
+  bio              : "Second year Ph.D student at William & Mary. Research in Physics-based ML, Autonomous Driving."
   location         : "United States"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "https://github.com/511205787?tab=repositories"
+  github           : "511205787"
   google_plus      :
   keybase          :
   instagram        :
