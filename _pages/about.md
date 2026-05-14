@@ -62,6 +62,82 @@ You can find my CV here: [Yuchen Wang's Curriculum Vitae](../assets/CV.pdf).
     padding-left: 1.5rem;
   }
 
+  .about-education {
+    display: grid;
+    gap: 1.35rem;
+  }
+
+  .about-education__entry {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 1.2rem 2rem;
+    padding: 1.35rem 1.4rem 1.35rem 1.25rem;
+    border: 1px solid #ece4d2;
+    border-left: 0.3rem solid #b59a4a;
+    border-radius: 1rem;
+    background: linear-gradient(180deg, #fffdf9 0%, #fbf7ef 100%);
+    box-shadow: 0 12px 28px rgba(95, 81, 40, 0.06);
+  }
+
+  .about-education__main {
+    min-width: 0;
+  }
+
+  .about-education__header {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .about-education__logo {
+    flex: 0 0 auto;
+    width: 3.2rem;
+    max-height: 3.2rem;
+    object-fit: contain;
+  }
+
+  .about-education__school {
+    margin: 0;
+    color: #2b2b2b;
+    font-size: 1.9rem;
+    font-weight: 700;
+    line-height: 1.15;
+  }
+
+  .about-education__location {
+    margin: 0.15rem 0 0;
+    color: #8a8477;
+    font-size: 0.98rem;
+  }
+
+  .about-education__degrees {
+    display: grid;
+    gap: 0.45rem;
+  }
+
+  .about-education__degree {
+    margin: 0;
+    color: #424242;
+    font-size: 1.22rem;
+    line-height: 1.65;
+  }
+
+  .about-education__dates {
+    display: grid;
+    align-content: center;
+    gap: 0.45rem;
+    min-width: 10rem;
+    color: #8f887c;
+    font-size: 1.08rem;
+    font-style: italic;
+    text-align: right;
+  }
+
+  .about-education__date {
+    white-space: nowrap;
+  }
+
   .about-section__item {
     margin-bottom: 0.5rem;
   }
@@ -133,15 +209,55 @@ You can find my CV here: [Yuchen Wang's Curriculum Vitae](../assets/CV.pdf).
     color: #2f2f2f;
     font-weight: 700;
   }
+
+  @media (max-width: 900px) {
+    .about-education__entry {
+      grid-template-columns: 1fr;
+      gap: 0.85rem;
+    }
+
+    .about-education__school {
+      font-size: 1.55rem;
+    }
+
+    .about-education__degree {
+      font-size: 1.08rem;
+    }
+
+    .about-education__dates {
+      min-width: 0;
+      text-align: left;
+    }
+  }
 </style>
 
 <section class="about-section about-section--first">
   <h2 class="about-section__title">Education</h2>
-  <ul class="about-section__list">
+  <div class="about-education">
     {% for item in site.data.profile.education.about %}
-    <li class="about-section__item">{{ item }}</li>
+    <article class="about-education__entry">
+      <div class="about-education__main">
+        <div class="about-education__header">
+          <img class="about-education__logo" src="{{ base_path }}/images/{{ item.logo }}" alt="{{ item.school }}">
+          <div>
+            <h3 class="about-education__school">{{ item.school }}</h3>
+            <p class="about-education__location">{{ item.location }}</p>
+          </div>
+        </div>
+        <div class="about-education__degrees">
+          {% for degree in item.degrees %}
+          <p class="about-education__degree">{{ degree.name }}</p>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="about-education__dates">
+        {% for degree in item.degrees %}
+        <div class="about-education__date">{{ degree.date }}</div>
+        {% endfor %}
+      </div>
+    </article>
     {% endfor %}
-  </ul>
+  </div>
 </section>
 
 <section class="about-section">

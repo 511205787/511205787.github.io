@@ -1,8 +1,23 @@
 education:
   about:
-    - "Ph.D. in Computer Science (2024-present), William & Mary, Williamsburg, United States."
-    - "M.S. in Control Science & Engineering (2024), Shanghai Jiao Tong University, Shanghai, China."
-    - "B.E. in Automation (2021), North China Electric Power University, Baoding, China."
+    - school: "William & Mary"
+      logo: "education/wm.png"
+      location: "Williamsburg, United States"
+      degrees:
+        - name: "Ph.D. in Computer Science"
+          date: "2024 - Present"
+    - school: "Shanghai Jiao Tong University"
+      logo: "education/SJTU.png"
+      location: "Shanghai, China"
+      degrees:
+        - name: "M.S. in Control Science & Engineering"
+          date: "2021 - 2024"
+    - school: "North China Electric Power University"
+      logo: "education/NCEPU.jpg"
+      location: "Baoding, China"
+      degrees:
+        - name: "B.E. in Automation"
+          date: "2017 - 2021"
   cv:
     - "Ph.D. in Computer Science, Department of Computer Science, William & Mary, Sep 2024 – Present"
     - "M.S. in Control Science & Engineering, School of Electronic Information and Electrical Engineering, Shanghai Jiao Tong University, Sep 2021 – Mar 2024"
