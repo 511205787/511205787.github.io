@@ -106,7 +106,7 @@ News
 Honors & Awards
 ======
 <ul class="about-news__list">
-  <li class="about-news__item">ICML Gold Reviewer Award — 2026</li>
+  <li class="about-news__item">ICML Gold Reviewer Award (top 25%) — 2026</li>
   <li class="about-news__item">Outstanding Graduate Award, Shanghai Jiao Tong University — 2024</li>
   <li class="about-news__item">Graduate Student Merit Scholarship, Shanghai Jiao Tong University — 2023</li>
   <li class="about-news__item">Second‑Class Academic Scholarship, Shanghai Jiao Tong University — 2022</li>
@@ -122,6 +122,11 @@ Honors & Awards
     <li class="about-news__item">Alumni Scholarship, North China Electric Power University — 2019</li>
   </ul>
 </details>
+
+Services
+======
+**Conference Reviewer:** CoRL (2025), ICML 2026 (<strong>Gold Reviewer, top 25%</strong>)  
+**Workshop Reviewer:** ICLR 2026 Workshop on World Models: Understanding, Modelling and Scaling
 
 Contact Information
 ======
