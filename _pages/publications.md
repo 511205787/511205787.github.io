@@ -194,7 +194,8 @@ author_profile: true
 {% include base_path %}
 
 <div class="publication-list">
-{% for post in site.publications reversed %}
+{% assign publications_sorted = site.publications | sort: "date" | reverse %}
+{% for post in publications_sorted %}
   {% include archive-single-publication-card.html %}
 {% endfor %}
 </div>
