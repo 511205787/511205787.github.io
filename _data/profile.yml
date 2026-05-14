@@ -1,0 +1,32 @@
+education:
+  about:
+    - "Ph.D. in Computer Science (2024-present), William & Mary, Williamsburg, United States."
+    - "M.S. in Control Science & Engineering (2024), Shanghai Jiao Tong University, Shanghai, China."
+    - "B.E. in Automation (2021), North China Electric Power University, Baoding, China."
+  cv:
+    - "Ph.D. in Computer Science, Department of Computer Science, William & Mary, Sep 2024 – Present"
+    - "M.S. in Control Science & Engineering, School of Electronic Information and Electrical Engineering, Shanghai Jiao Tong University, Sep 2021 – Mar 2024"
+    - "B.E. in Automation, School of Control and Computer Engineering, North China Electric Power University, Sep 2017 – Jul 2021"
+
+honors:
+  - "ICML Gold Reviewer Award (top 25%) — 2026"
+  - "Outstanding Graduate Award, Shanghai Jiao Tong University — 2024"
+  - "Graduate Student Merit Scholarship, Shanghai Jiao Tong University — 2023"
+  - "Second‑Class Academic Scholarship, Shanghai Jiao Tong University — 2022"
+  - "Third‑Class College Scholarship, North China Electric Power University — 2020"
+  - "Alumni Scholarship, North China Electric Power University — 2019"
+
+services:
+  conference:
+    - text: "CoRL (2025)"
+    - text: "ICML 2026"
+      note: "Gold Reviewer, top 25%"
+      note_strong: true
+  workshop:
+    - text: "ICLR 2026 Workshop on World Models: Understanding, Modelling and Scaling"
+
+contact:
+  - label: "Phone"
+    value: "+1 757-332-8055"
+  - label: "Email"
+    value: "ywang142@wm.edu"

@@ -138,9 +138,9 @@ You can find my CV here: [Yuchen Wang's Curriculum Vitae](../assets/CV.pdf).
 <section class="about-section about-section--first">
   <h2 class="about-section__title">Education</h2>
   <ul class="about-section__list">
-    <li class="about-section__item">Ph.D. in Computer Science (2024-present), William & Mary, Williamsburg, United States.</li>
-    <li class="about-section__item">M.S. in Control Science & Engineering (2024), Shanghai Jiao Tong University, Shanghai, China.</li>
-    <li class="about-section__item">B.E. in Automation (2021), North China Electric Power University, Baoding, China.</li>
+    {% for item in site.data.profile.education.about %}
+    <li class="about-section__item">{{ item }}</li>
+    {% endfor %}
   </ul>
 </section>
 
@@ -171,10 +171,9 @@ You can find my CV here: [Yuchen Wang's Curriculum Vitae](../assets/CV.pdf).
 <section class="about-section">
   <h2 class="about-section__title">Honors & Awards</h2>
   <ul class="about-section__list">
-    <li class="about-section__item">ICML Gold Reviewer Award (top 25%) — 2026</li>
-    <li class="about-section__item">Outstanding Graduate Award, Shanghai Jiao Tong University — 2024</li>
-    <li class="about-section__item">Graduate Student Merit Scholarship, Shanghai Jiao Tong University — 2023</li>
-    <li class="about-section__item">Second‑Class Academic Scholarship, Shanghai Jiao Tong University — 2022</li>
+    {% for item in site.data.profile.honors limit:4 %}
+    <li class="about-section__item">{{ item }}</li>
+    {% endfor %}
   </ul>
 
   <details class="about-section__details">
@@ -183,22 +182,24 @@ You can find my CV here: [Yuchen Wang's Curriculum Vitae](../assets/CV.pdf).
       <span class="about-section__less">Show Less</span>
     </summary>
     <ul class="about-section__list about-section__extra">
-      <li class="about-section__item">Third‑Class College Scholarship, North China Electric Power University — 2020</li>
-      <li class="about-section__item">Alumni Scholarship, North China Electric Power University — 2019</li>
+      {% for item in site.data.profile.honors offset:4 %}
+      <li class="about-section__item">{{ item }}</li>
+      {% endfor %}
     </ul>
   </details>
 </section>
 
 <section class="about-section">
   <h2 class="about-section__title">Services</h2>
-  <p class="about-section__service"><span class="about-section__label">Conference Reviewer:</span> CoRL (2025), ICML 2026 (<strong>Gold Reviewer, top 25%</strong>)</p>
-  <p class="about-section__service"><span class="about-section__label">Workshop Reviewer:</span> ICLR 2026 Workshop on World Models: Understanding, Modelling and Scaling</p>
+  <p class="about-section__service"><span class="about-section__label">Conference Reviewer:</span> {% for item in site.data.profile.services.conference %}{{ item.text }}{% if item.note %} ({% if item.note_strong %}<strong>{{ item.note }}</strong>{% else %}{{ item.note }}{% endif %}){% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+  <p class="about-section__service"><span class="about-section__label">Workshop Reviewer:</span> {% for item in site.data.profile.services.workshop %}{{ item.text }}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
 </section>
 
 <section class="about-section">
   <h2 class="about-section__title">Contact Information</h2>
   <ul class="about-section__list">
-    <li class="about-section__item">Phone: +1 757-332-8055</li>
-    <li class="about-section__item">Email: ywang142@wm.edu</li>
+    {% for item in site.data.profile.contact %}
+    <li class="about-section__item">{{ item.label }}: {{ item.value }}</li>
+    {% endfor %}
   </ul>
 </section>
