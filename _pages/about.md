@@ -13,6 +13,21 @@ I'm a second year phd student from William & Mary, advised by Professor [Huajie 
 You can find my CV here: [Yuchen Wang's Curriculum Vitae](../assets/CV.pdf).
 
 <style>
+  .page__title {
+    margin-bottom: 1.15rem;
+    color: #b59a4a;
+  }
+
+  .page__title::after {
+    content: "";
+    display: block;
+    width: 3rem;
+    height: 0.2rem;
+    margin-top: 0.45rem;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #b59a4a 0%, #d8c693 100%);
+  }
+
   .about-section {
     margin-top: 2.75rem;
     padding-top: 1.5rem;
