@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/2026-03-01-ICML-WestWorld
 date: 2026-03-01
 venue: "International Conference on Machine Learning (ICML)"
-citation: Wang, Y., Kong, J., Wei, S., Li, X., Lin, H., Zhao, H., Zhou, T., Gan, L., & Shao, H. (2026). WestWorld: A Knowledge-Encoded Scalable Trajectory World Model for Diverse Robotic Systems. International Conference on Machine Learning (ICML).
+citation: "Wang, Y., Kong, J., Wei, S., Li, X., Lin, H., Zhao, H., Zhou, T., Gan, L., & Shao, H. (2026). WestWorld: A Knowledge-Encoded Scalable Trajectory World Model for Diverse Robotic Systems. International Conference on Machine Learning (ICML)."
 header:
   teaser: publications/ICML-2026-westworld.png
 authors: "**Yuchen Wang**<sup>*</sup>, Jiangtao Kong<sup>*</sup>, Sizhe Wei, Xiaochang Li, Haohong Lin, Hongjue Zhao, Tianyi Zhou, Lu Gan, and Huajie Shao."
