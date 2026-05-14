@@ -1,24 +1,56 @@
 {% include base_path %}
 
-<div class="page__footer-follow">
-  <ul class="social-icons">
-    {% if site.data.ui-text[site.locale].follow_label %}
-      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
-    {% endif %}
-    {% if site.twitter.username %}
-      <li><a href="https://twitter.com/{{ site.twitter.username }}"><i class="fab fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
-    {% endif %}
-    {% if site.facebook.username %}
-      <li><a href="https://facebook.com/{{ site.facebook.username }}"><i class="fab fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
-    {% endif %}
-    {% if site.author.github %}
-      <li><a href="http://github.com/{{ site.author.github }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
-    {% endif %}
-    {% if site.author.bitbucket %}
-      <li><a href="http://bitbucket.org/{{ site.author.bitbucket }}"><i class="fab fa-bitbucket" aria-hidden="true"></i> Bitbucket</a></li>
-    {% endif %}
-    <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
-  </ul>
-</div>
+<style>
+  .site-footer-custom {
+    color: #4b4b4b;
+  }
 
-<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+  .site-footer-custom__title {
+    margin: 0 0 0.9rem;
+    color: #2f2f2f;
+    font-size: 1.35rem;
+    font-weight: 700;
+  }
+
+  .site-footer-custom__links {
+    display: grid;
+    gap: 0.7rem;
+    margin-bottom: 1.35rem;
+  }
+
+  .site-footer-custom__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    color: #1f5f92;
+    font-size: 1.15rem;
+    text-decoration: none;
+  }
+
+  .site-footer-custom__link:hover {
+    color: #0f4168;
+  }
+
+  .site-footer-custom__logo {
+    width: 2rem;
+    max-height: 2rem;
+    object-fit: contain;
+  }
+
+  .site-footer-custom__meta {
+    color: #4f4f4f;
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+</style>
+
+<div class="site-footer-custom">
+  <p class="site-footer-custom__title">Related Links:</p>
+  <div class="site-footer-custom__links">
+    <a class="site-footer-custom__link" href="https://huajieshao.github.io/index.html#Home">
+      <img class="site-footer-custom__logo" src="{{ base_path }}/images/education/wm.png" alt="William & Mary">
+      <span>Huajie Shao @ William &amp; Mary</span>
+    </a>
+  </div>
+  <div class="site-footer-custom__meta">&copy; {{ site.time | date: '%Y' }} Yuchen Wang. All rights reserved. Last updated: {{ site.time | date: '%B, %Y' }}.</div>
+</div>
