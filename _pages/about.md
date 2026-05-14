@@ -316,12 +316,3 @@ You can find my CV here: [Yuchen Wang's Curriculum Vitae](../assets/CV.pdf).
   <p class="about-section__service"><span class="about-section__label">Conference Reviewer:</span> {% for item in site.data.profile.services.conference %}{{ item.text }}{% if item.note %} ({% if item.note_strong %}<strong>{{ item.note }}</strong>{% else %}{{ item.note }}{% endif %}){% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
   <p class="about-section__service"><span class="about-section__label">Workshop Reviewer:</span> {% for item in site.data.profile.services.workshop %}{{ item.text }}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
 </section>
-
-<section class="about-section">
-  <h2 class="about-section__title">Contact Information</h2>
-  <ul class="about-section__list">
-    {% for item in site.data.profile.contact %}
-    <li class="about-section__item">{{ item.label }}: {{ item.value }}</li>
-    {% endfor %}
-  </ul>
-</section>
