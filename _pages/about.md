@@ -71,7 +71,7 @@ You can find my CV here: [Yuchen Wang's Curriculum Vitae](../assets/CV.pdf).
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto;
     gap: 1.2rem 2rem;
-    padding: 1.35rem 1.4rem 1.35rem 1.25rem;
+    padding: 1rem 1.25rem 1rem 1.1rem;
     border: 1px solid #ece4d2;
     border-left: 0.3rem solid #b59a4a;
     border-radius: 1rem;
@@ -87,7 +87,7 @@ You can find my CV here: [Yuchen Wang's Curriculum Vitae](../assets/CV.pdf).
     display: flex;
     align-items: center;
     gap: 0.9rem;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.55rem;
   }
 
   .about-education__logo {
@@ -100,27 +100,28 @@ You can find my CV here: [Yuchen Wang's Curriculum Vitae](../assets/CV.pdf).
   .about-education__school {
     margin: 0;
     color: #2b2b2b;
-    font-size: 1.9rem;
+    font-size: 1.55rem;
     font-weight: 700;
-    line-height: 1.15;
+    line-height: 1.18;
+    white-space: nowrap;
   }
 
   .about-education__location {
     margin: 0.15rem 0 0;
     color: #8a8477;
-    font-size: 0.98rem;
+    font-size: 0.94rem;
   }
 
   .about-education__degrees {
     display: grid;
-    gap: 0.45rem;
+    gap: 0.3rem;
   }
 
   .about-education__degree {
     margin: 0;
     color: #424242;
-    font-size: 1.22rem;
-    line-height: 1.65;
+    font-size: 1.28rem;
+    line-height: 1.45;
   }
 
   .about-education__dates {
@@ -217,11 +218,12 @@ You can find my CV here: [Yuchen Wang's Curriculum Vitae](../assets/CV.pdf).
     }
 
     .about-education__school {
-      font-size: 1.55rem;
+      font-size: 1.28rem;
+      white-space: normal;
     }
 
     .about-education__degree {
-      font-size: 1.08rem;
+      font-size: 1.12rem;
     }
 
     .about-education__dates {
