@@ -24,8 +24,9 @@ author_profile: true
   .publications-note {
     margin: 0 0 1.5rem;
     color: #746f63;
-    font-size: 0.95rem;
-    line-height: 1.7;
+    font-size: 0.98rem;
+    line-height: 1.8;
+    font-style: normal;
   }
 
   .publication-list {
@@ -189,7 +190,7 @@ author_profile: true
   You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
 {% endif %}
 
-<p class="publications-note">First-author works are highlighted in the author list.</p>
+<p class="publications-note">* indicates equal contribution. † indicates co-advising. First-author or co-first-author works are highlighted.</p>
 
 {% include base_path %}
 
