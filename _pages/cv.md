@@ -56,8 +56,8 @@ redirect_from:
   .publication-card__title {
     margin: 0 0 0.7rem;
     color: #2a2a2a;
-    font-size: 2rem;
-    line-height: 1.22;
+    font-size: 1.75rem;
+    line-height: 1.26;
   }
 
   .publication-card__authors,
@@ -158,7 +158,7 @@ redirect_from:
     }
 
     .publication-card__title {
-      font-size: 1.55rem;
+      font-size: 1.4rem;
     }
   }
 </style>
