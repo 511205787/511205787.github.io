@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm a first year phd student from William & Mary, advised by Professor [Huajie Shao](https://huajieshao.github.io/index.html). My current research interest focuses on developing physics‑informed machine learning methods to build generalizable world models, with applications spanning robotics, autonomous driving, and power systems.
+I'm a second year phd student from William & Mary, advised by Professor [Huajie Shao](https://huajieshao.github.io/index.html). My current research interest focuses on developing physics‑informed machine learning methods to build generalizable world models, with applications spanning robotics, autonomous driving, and power systems.
 
 You can find my CV here: [Yuchen Wang's Curriculum Vitae](../assets/CV.pdf).
 
@@ -17,14 +17,6 @@ Education
 •	Ph.d. in Computer Science (2024-present), William & Mary, Williamsburg, United States.<br>
 •	M.S. in Control Science & Engineering (2024), Shanghai Jiao Tong University, Shanghai, China.<br>
 •	B.E. in Automation (2021), North China Electric Power University, Baoding, China.
-
-Honors & Awards
-======
-* Outstanding Graduate Award, Shanghai Jiao Tong University — 2024  
-* Graduate Student Merit Scholarship, Shanghai Jiao Tong University — 2023  
-* Second‑Class Academic Scholarship, Shanghai Jiao Tong University — 2022  
-* Third‑Class College Scholarship, North China Electric Power University — 2020  
-* Alumni Scholarship, North China Electric Power University — 2019  
 
 News
 ======
@@ -110,6 +102,26 @@ News
   </ul>
 </details>
 
+
+Honors & Awards
+======
+<ul class="about-news__list">
+  <li class="about-news__item">ICML Gold Reviewer Award — 2026</li>
+  <li class="about-news__item">Outstanding Graduate Award, Shanghai Jiao Tong University — 2024</li>
+  <li class="about-news__item">Graduate Student Merit Scholarship, Shanghai Jiao Tong University — 2023</li>
+  <li class="about-news__item">Second‑Class Academic Scholarship, Shanghai Jiao Tong University — 2022</li>
+</ul>
+
+<details class="about-news__details">
+  <summary>
+    <span class="about-news__more">Show More</span>
+    <span class="about-news__less">Show Less</span>
+  </summary>
+  <ul class="about-news__list about-news__extra">
+    <li class="about-news__item">Third‑Class College Scholarship, North China Electric Power University — 2020</li>
+    <li class="about-news__item">Alumni Scholarship, North China Electric Power University — 2019</li>
+  </ul>
+</details>
 
 Contact Information
 ======
