@@ -1,0 +1,77 @@
+{% include base_path %}
+
+{% if post.header.teaser %}
+  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
+{% else %}
+  {% assign teaser = nil %}
+{% endif %}
+
+{% assign pub_id = post.slug | default: post.url | slugify %}
+{% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% assign authors = post.authors | default: post.excerpt | markdownify | remove: "<p>" | remove: "</p>" %}
+
+<article class="publication-card{% if teaser %} publication-card--with-image{% else %} publication-card--text-only{% endif %}" itemscope itemtype="http://schema.org/CreativeWork">
+  {% if teaser %}
+  <div class="publication-card__media">
+    <img
+      class="publication-card__image"
+      src="{% if teaser contains '://' %}{{ teaser }}{% else %}{{ teaser | prepend: '/images/' | prepend: base_path }}{% endif %}"
+      alt="{{ post.title }}">
+  </div>
+  {% endif %}
+
+  <div class="publication-card__body">
+    <h2 class="publication-card__title" itemprop="headline">
+      <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+    </h2>
+
+    {% if post.authors %}
+    <p class="publication-card__authors">{{ authors }}</p>
+    {% endif %}
+
+    <p class="publication-card__venue">
+      <em>{{ post.venue }}</em>, {{ post.date | date: "%Y" }}
+    </p>
+
+    {% if post.badge %}
+    <p class="publication-card__badges">
+      <span class="publication-card__badge">{{ post.badge }}</span>
+    </p>
+    {% endif %}
+
+    {% if post.abstract %}
+    <input id="pub-abstract-{{ pub_id }}" class="publication-card__toggle" type="checkbox">
+    {% endif %}
+
+    <div class="publication-card__link-row">
+      {% assign has_prev = false %}
+      {% if post.abstract %}
+        <label class="publication-card__toggle-label" for="pub-abstract-{{ pub_id }}">
+          <span class="publication-card__toggle-more">Abstract</span>
+          <span class="publication-card__toggle-less">Hide Abstract</span>
+        </label>
+        {% assign has_prev = true %}
+      {% endif %}
+      {% if post.paperurl %}
+        {% if has_prev %}<span class="publication-card__sep">/</span>{% endif %}
+        <a href="{{ post.paperurl }}">Paper</a>
+        {% assign has_prev = true %}
+      {% endif %}
+      {% if post.codeurl %}
+        {% if has_prev %}<span class="publication-card__sep">/</span>{% endif %}
+        <a href="{{ post.codeurl }}">Code</a>
+        {% assign has_prev = true %}
+      {% endif %}
+      {% if post.projecturl %}
+        {% if has_prev %}<span class="publication-card__sep">/</span>{% endif %}
+        <a href="{{ post.projecturl }}">Project Page</a>
+      {% endif %}
+    </div>
+
+    {% if post.abstract %}
+    <div class="publication-card__abstract">
+      <p>{{ post.abstract }}</p>
+    </div>
+    {% endif %}
+  </div>
+</article>
