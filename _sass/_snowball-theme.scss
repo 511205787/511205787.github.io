@@ -387,157 +387,36 @@ textarea {
   color: var(--snow-text-muted);
 }
 
-.snowball-home {
+.about-home {
   display: grid;
-  gap: 2rem;
-}
-
-.snowball-home__hero {
-  display: grid;
-  grid-template-columns: minmax(270px, 320px) minmax(0, 1fr);
-  gap: 1.5rem;
-  align-items: stretch;
-}
-
-.snowball-home__panel {
-  position: relative;
-  overflow: hidden;
-  border: 1px solid var(--snow-line);
-  border-radius: 28px;
-  background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.018)),
-    var(--snow-surface);
-  box-shadow: var(--snow-shadow);
-}
-
-.snowball-home__panel::after {
-  content: "";
-  position: absolute;
-  inset: auto -8% -38% auto;
-  width: 240px;
-  height: 240px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(168, 146, 216, 0.12), transparent 68%);
-  pointer-events: none;
-}
-
-.snowball-home__profile {
-  display: grid;
-  gap: 1rem;
-  padding: 1.4rem;
-}
-
-.snowball-home__photo {
-  overflow: hidden;
-  border-radius: 22px;
-  border: 1px solid rgba(244, 240, 232, 0.1);
-  aspect-ratio: 1 / 1.06;
-}
-
-.snowball-home__photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.snowball-home__name {
-  margin: 0;
-  font-size: clamp(2rem, 3vw, 2.7rem);
-  line-height: 1;
-}
-
-.snowball-home__affiliation {
-  margin: 0;
-  color: rgba(200, 183, 239, 0.9);
-  font-size: 1rem;
-}
-
-.snowball-home__role {
-  margin: 0;
-  color: var(--snow-text-soft);
-  font-size: 1rem;
-}
-
-.snowball-home__links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.65rem;
-}
-
-.snowball-home__link {
-  display: inline-flex;
-  align-items: center;
-  min-height: 2.5rem;
-  padding: 0.55rem 0.95rem;
-  border: 1px solid rgba(244, 240, 232, 0.12);
-  border-radius: 999px;
-  background: rgba(244, 240, 232, 0.05);
-  color: var(--snow-text);
-  font-size: 0.96rem;
-  text-decoration: none;
-  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
-}
-
-.snowball-home__link:hover {
-  transform: translateY(-1px);
-  border-color: rgba(214, 161, 95, 0.34);
-  background: rgba(214, 161, 95, 0.12);
-}
-
-.snowball-home__intro {
-  padding: 1.8rem 1.9rem;
-}
-
-.snowball-home__eyebrow {
-  margin: 0 0 0.85rem;
-  color: rgba(214, 161, 95, 0.92);
-  font-family: var(--snow-mono);
-  font-size: 0.76rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.snowball-home__intro p:last-child {
-  margin-bottom: 0;
+  gap: 2.2rem;
+  margin-top: 2.4rem;
 }
 
 .about-section {
   position: relative;
-  padding: 1.8rem 1.9rem 1.9rem;
-  border: 1px solid var(--snow-line);
-  border-radius: 28px;
-  background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.012)),
-    var(--snow-surface);
-  box-shadow: var(--snow-shadow);
+}
+
+.about-section + .about-section {
+  padding-top: 0.35rem;
 }
 
 .about-section__title {
   margin: 0 0 1.4rem;
-  font-size: clamp(1.8rem, 2.5vw, 2.4rem);
+  color: var(--snow-text);
+  font-size: 2.25rem;
+  line-height: 1.05;
+  letter-spacing: 0;
 }
 
 .about-section__title::after {
   content: "";
   display: block;
-  width: 3rem;
-  height: 0.2rem;
-  margin-top: 0.5rem;
+  width: 3.2rem;
+  height: 0.22rem;
+  margin-top: 0.65rem;
   border-radius: 999px;
-  background: linear-gradient(90deg, rgba(214, 161, 95, 0.92), rgba(168, 146, 216, 0.72));
-}
-
-.about-section__list {
-  margin: 0;
-  padding-left: 1.2rem;
-}
-
-.about-section__item {
-  margin-bottom: 0.78rem;
-}
-
-.about-section__item:last-child {
-  margin-bottom: 0;
+  background: linear-gradient(90deg, rgba(214, 161, 95, 0.92), rgba(168, 146, 216, 0.76));
 }
 
 .about-section__details {
@@ -547,13 +426,14 @@ textarea {
 .about-section__details summary {
   display: inline-flex;
   align-items: center;
-  min-height: 2.5rem;
-  padding: 0.55rem 0.95rem;
-  border: 1px solid rgba(244, 240, 232, 0.12);
-  border-radius: 999px;
-  background: rgba(244, 240, 232, 0.05);
+  min-height: 2.25rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
   color: var(--snow-link);
   cursor: pointer;
+  font-size: 0.92rem;
+  font-weight: 700;
   list-style: none;
 }
 
@@ -581,45 +461,35 @@ textarea {
   display: inline;
 }
 
-.about-section__service {
-  margin: 0 0 0.8rem;
-}
-
-.about-section__service:last-child {
-  margin-bottom: 0;
-}
-
-.about-section__label {
-  color: var(--snow-text);
+.about-education,
+.about-news-timeline,
+.about-award-list,
+.about-service-grid {
+  display: grid;
+  gap: 1rem;
 }
 
 .about-education {
-  display: grid;
-  gap: 1rem;
   position: relative;
 }
 
 .about-education::before {
   content: "";
   position: absolute;
-  left: 73px;
-  top: 78px;
-  bottom: 78px;
+  left: 57px;
+  top: 70px;
+  bottom: 70px;
   width: 1px;
-  background: linear-gradient(180deg, rgba(214, 161, 95, 0.18), rgba(168, 146, 216, 0.34), rgba(214, 161, 95, 0.22));
+  background: linear-gradient(180deg, rgba(214, 161, 95, 0.18), rgba(168, 146, 216, 0.34), rgba(214, 161, 95, 0.2));
 }
 
 .about-education__entry {
-  display: grid;
-  grid-template-columns: 116px minmax(0, 1fr);
-  gap: 1.5rem;
-  align-items: center;
-  min-height: 160px;
   position: relative;
   overflow: hidden;
-  padding: 1.6rem 1.75rem;
+  min-height: 132px;
+  padding: 1.35rem 1.5rem;
   border: 1px solid var(--snow-line);
-  border-radius: 28px;
+  border-radius: 22px;
   background:
     linear-gradient(145deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.018)),
     var(--snow-surface);
@@ -636,11 +506,12 @@ textarea {
 .about-education__entry::after {
   content: "";
   position: absolute;
-  inset: -36% -10% auto auto;
-  width: 300px;
-  height: 220px;
+  inset: -36% -12% auto auto;
+  width: 270px;
+  height: 190px;
   border-radius: 50%;
   background: radial-gradient(circle, var(--about-education-glow), transparent 70%);
+  pointer-events: none;
 }
 
 .about-education__entry:nth-child(odd) {
@@ -657,14 +528,14 @@ textarea {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: 96px minmax(0, 1fr);
-  gap: 1.4rem;
+  grid-template-columns: 92px minmax(0, 1fr);
+  gap: 1.35rem;
   align-items: center;
 }
 
 .about-education__logo-wrap {
-  width: 88px;
-  height: 88px;
+  width: 82px;
+  height: 82px;
   display: grid;
   place-items: center;
   border-radius: 50%;
@@ -673,7 +544,7 @@ textarea {
 
 .about-education__logo {
   width: 100%;
-  max-height: 88px;
+  max-height: 82px;
   object-fit: contain;
 }
 
@@ -692,7 +563,7 @@ textarea {
 .about-education__track {
   color: rgba(214, 161, 95, 0.92);
   font-family: var(--snow-mono);
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -700,24 +571,27 @@ textarea {
 .about-education__dates {
   display: inline-flex;
   align-items: center;
-  min-height: 2.3rem;
-  padding: 0.45rem 0.9rem;
+  min-height: 2.15rem;
+  padding: 0.45rem 0.85rem;
   border: 1px solid rgba(255, 255, 255, 0.11);
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.055);
   color: rgba(247, 242, 232, 0.82);
-  font-size: 0.88rem;
+  font-size: 0.86rem;
   line-height: 1;
   white-space: nowrap;
 }
 
 .about-education__school {
-  margin: 0 0 0.25rem;
-  font-size: clamp(1.45rem, 2vw, 1.9rem);
+  margin: 0 0 0.3rem;
+  color: var(--snow-text);
+  font-size: 1.7rem;
+  line-height: 1.12;
+  letter-spacing: 0;
 }
 
 .about-education__degree {
-  margin: 0 0 0.22rem;
+  margin: 0 0 0.24rem;
   color: rgba(255, 250, 240, 0.94);
   font-size: 1.05rem;
 }
@@ -725,30 +599,267 @@ textarea {
 .about-education__location {
   margin: 0;
   color: rgba(159, 185, 205, 0.9);
-  font-size: 1.02rem;
+  font-size: 1rem;
+}
+
+.about-news-timeline {
+  --timeline-rail: 38px;
+  --timeline-gap: 14px;
+  position: relative;
+  gap: 0;
+  overflow: hidden;
+  padding: 1.15rem 1.35rem 1.2rem;
+  border: 1px solid var(--snow-line);
+  border-radius: 22px;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.016)),
+    var(--snow-surface);
+}
+
+.about-news-timeline::before {
+  content: "";
+  position: absolute;
+  left: calc(1.35rem + 18px);
+  top: 1.45rem;
+  bottom: 1.45rem;
+  width: 2px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgba(214, 161, 95, 0.72), rgba(168, 146, 216, 0.52), rgba(214, 161, 95, 0.28));
+  box-shadow: 0 0 18px rgba(168, 146, 216, 0.13);
+}
+
+.about-news-year,
+.about-news-item {
+  display: grid;
+  grid-template-columns: var(--timeline-rail) minmax(0, 1fr);
+  gap: var(--timeline-gap);
+  position: relative;
+}
+
+.about-news-year {
+  align-items: center;
+  padding: 0.4rem 0 0.3rem;
+}
+
+.about-news-year span:last-child {
+  width: fit-content;
+  padding: 0.22rem 0.65rem;
+  border: 1px solid rgba(214, 161, 95, 0.24);
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(214, 161, 95, 0.2), rgba(168, 146, 216, 0.12));
+  color: rgba(255, 250, 240, 0.96);
+  font-family: var(--snow-mono);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.1;
+}
+
+.about-news-rail-mark,
+.about-news-node {
+  border-radius: 999px;
+  justify-self: center;
+  position: relative;
+  z-index: 1;
+}
+
+.about-news-rail-mark {
+  width: 8px;
+  height: 8px;
+  background: var(--snow-link);
+  box-shadow: 0 0 0 7px rgba(214, 161, 95, 0.08), 0 0 20px rgba(214, 161, 95, 0.22);
+}
+
+.about-news-item {
+  align-items: baseline;
+  padding: 0.55rem 0;
+}
+
+.about-news-node {
+  width: 10px;
+  height: 10px;
+  align-self: start;
+  margin-top: 0.55em;
+  background: rgba(255, 250, 240, 0.92);
+  box-shadow: 0 0 0 6px rgba(168, 146, 216, 0.09), 0 0 18px rgba(168, 146, 216, 0.2);
+}
+
+.about-news-item p {
+  margin: 0;
+  color: rgba(247, 242, 232, 0.76);
+  font-size: 0.98rem;
+  line-height: 1.62;
+}
+
+.about-news-item strong {
+  color: rgba(255, 250, 240, 0.96);
+  font-weight: 700;
+}
+
+.about-news-date {
+  display: inline-block;
+  margin-right: 0.55rem;
+  color: rgba(214, 161, 95, 0.9);
+  font-family: var(--snow-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.03em;
+}
+
+.about-news-venue {
+  color: rgba(200, 183, 239, 0.98);
+  font-weight: 700;
+  text-decoration-color: rgba(200, 183, 239, 0.35);
+}
+
+.about-news-spotlight {
+  display: inline-block;
+  padding: 0.08rem 0.45rem;
+  border: 1px solid rgba(230, 107, 115, 0.22);
+  border-radius: 999px;
+  background: rgba(230, 107, 115, 0.12);
+  color: #f08a91;
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.about-award-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.about-award-item,
+.about-service-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(244, 240, 232, 0.1);
+  border-radius: 18px;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.014)),
+    var(--snow-surface);
+}
+
+.about-award-item {
+  display: grid;
+  grid-template-columns: 4.2rem minmax(0, 1fr);
+  gap: 0.85rem;
+  align-items: baseline;
+  min-height: 4.6rem;
+  padding: 0.9rem 1rem;
+}
+
+.about-award-item::before,
+.about-service-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 3px;
+  background: linear-gradient(180deg, rgba(214, 161, 95, 0.78), rgba(168, 146, 216, 0.48));
+}
+
+.about-award-item time,
+.about-service-card__label {
+  color: rgba(214, 161, 95, 0.94);
+  font-family: var(--snow-mono);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.about-award-item p,
+.about-service-card p {
+  margin: 0;
+  color: rgba(247, 242, 232, 0.72);
+  font-size: 0.94rem;
+  line-height: 1.5;
+}
+
+.about-service-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.about-service-card {
+  display: grid;
+  gap: 0.55rem;
+  min-height: 6rem;
+  padding: 1rem 1.1rem;
+}
+
+.about-service-card__label {
+  text-transform: uppercase;
 }
 
 @media (max-width: 900px) {
-  .snowball-home__hero {
-    grid-template-columns: 1fr;
+  .about-home {
+    gap: 1.8rem;
+  }
+
+  .about-section__title {
+    font-size: 1.9rem;
   }
 
   .about-education::before {
     display: none;
   }
 
-  .about-education__entry,
-  .about-education__main {
-    grid-template-columns: 1fr;
+  .about-education__entry {
+    padding: 1.25rem;
   }
 
-  .about-education__entry {
+  .about-education__main {
+    grid-template-columns: 76px minmax(0, 1fr);
     gap: 1rem;
-    padding: 1.35rem;
+  }
+
+  .about-education__logo-wrap {
+    width: 68px;
+    height: 68px;
+  }
+
+  .about-education__logo {
+    max-height: 68px;
   }
 
   .about-education__topline {
     flex-direction: column;
     align-items: flex-start;
+    gap: 0.55rem;
+  }
+
+  .about-education__school {
+    font-size: 1.35rem;
+  }
+
+  .about-award-list,
+  .about-service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-news-timeline {
+    --timeline-rail: 28px;
+    --timeline-gap: 10px;
+    padding: 1rem;
+  }
+
+  .about-news-timeline::before {
+    left: calc(1rem + 13px);
+  }
+}
+
+@media (max-width: 560px) {
+  .about-education__main {
+    grid-template-columns: 1fr;
+  }
+
+  .about-news-timeline::before {
+    display: none;
+  }
+
+  .about-news-year,
+  .about-news-item {
+    grid-template-columns: 1fr;
+  }
+
+  .about-news-rail-mark,
+  .about-news-node {
+    display: none;
   }
 }
