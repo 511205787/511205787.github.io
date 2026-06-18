@@ -167,6 +167,25 @@ figcaption > code {
   margin-top: 2.4rem;
 }
 
+@media (min-width: 925px) {
+  #main {
+    width: 92%;
+    max-width: 1480px;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  .sidebar {
+    width: 220px;
+  }
+
+  .page {
+    width: calc(100% - 300px);
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
 .masthead {
   position: sticky;
   top: 0;
@@ -760,6 +779,7 @@ textarea {
 }
 
 .about-award-item {
+  order: 1;
   display: grid;
   grid-template-columns: 4.2rem minmax(0, 1fr);
   gap: 0.85rem;
@@ -803,6 +823,7 @@ textarea {
 }
 
 .about-award-item--extra {
+  order: 2;
   display: none;
 }
 
@@ -811,9 +832,11 @@ textarea {
 }
 
 .about-awards-toggle {
+  order: 3;
   grid-column: 1 / -1;
   width: fit-content;
   margin-top: 0.2rem;
+  border: 0;
   color: var(--snow-link);
   cursor: pointer;
   font-size: 0.92rem;
