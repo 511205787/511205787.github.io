@@ -28,11 +28,27 @@ author_profile: true
   .publication-filters__input,
   .publication-filters__select {
     min-height: 3rem;
-    border: 1px solid var(--snow-line);
-    border-radius: 0.75rem;
-    background: rgba(244, 240, 232, 0.055);
-    color: var(--snow-text);
+    border: 1px solid rgba(244, 240, 232, 0.22);
+    border-radius: 0.8rem;
+    background: #111720;
+    color: #fffaf0;
     font: inherit;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.045);
+    transition: border-color 180ms ease, box-shadow 180ms ease, background 180ms ease;
+  }
+
+  .publication-filters__input::placeholder {
+    color: rgba(255, 250, 240, 0.52);
+  }
+
+  .publication-filters__input:focus,
+  .publication-filters__select:focus {
+    border-color: rgba(214, 161, 95, 0.68);
+    background: #151d23;
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.055),
+      0 0 0 3px rgba(214, 161, 95, 0.14);
+    outline: 0;
   }
 
   .publication-filters__input {
@@ -45,20 +61,28 @@ author_profile: true
     padding: 0.8rem 2.6rem 0.8rem 1rem;
   }
 
+  .publication-filters__select option {
+    background: #111720;
+    color: #fffaf0;
+  }
+
   .publication-filters__clear {
     min-height: 3rem;
     padding: 0.8rem 1.2rem;
-    border: 1px solid var(--snow-line);
-    border-radius: 0.75rem;
-    background: rgba(244, 240, 232, 0.055);
-    color: var(--snow-text-soft);
+    border: 1px solid rgba(244, 240, 232, 0.22);
+    border-radius: 0.8rem;
+    background: #111720;
+    color: #fffaf0;
     cursor: pointer;
     font: inherit;
+    transition: border-color 180ms ease, box-shadow 180ms ease, color 180ms ease, background 180ms ease;
   }
 
   .publication-filters__clear:hover {
-    color: var(--snow-link-hover);
-    border-color: rgba(214, 161, 95, 0.36);
+    color: #fffaf0;
+    border-color: rgba(214, 161, 95, 0.68);
+    background: #151d23;
+    box-shadow: 0 0 0 3px rgba(214, 161, 95, 0.12);
   }
 
   .publication-empty {
