@@ -728,12 +728,19 @@ textarea {
   font-weight: 800;
 }
 
-.about-news-more {
+.about-news-toggle-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.about-news-extra {
   display: contents;
 }
 
-.about-news-more:not([open]) .about-news-year,
-.about-news-more:not([open]) .about-news-item {
+.about-news-toggle-input:not(:checked) ~ .about-news-extra {
   display: none;
 }
 
@@ -742,6 +749,27 @@ textarea {
   width: fit-content;
   margin-top: 0.9rem;
   margin-left: calc(var(--timeline-rail) + var(--timeline-gap));
+  color: var(--snow-link);
+  cursor: pointer;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.about-news-toggle:hover {
+  color: var(--snow-link-hover);
+}
+
+.about-news-toggle-input:focus-visible ~ .about-news-toggle {
+  outline: 2px solid rgba(214, 161, 95, 0.68);
+  outline-offset: 4px;
+}
+
+.about-news-toggle-input:checked ~ .about-news-toggle .about-section__more {
+  display: none;
+}
+
+.about-news-toggle-input:checked ~ .about-news-toggle .about-section__less {
+  display: inline;
 }
 
 .about-award-list {

@@ -87,11 +87,8 @@ You can find my CV here: [Yuchen Wang's Curriculum Vitae](../assets/CV.pdf).
         <span class="about-news-node" aria-hidden="true"></span>
         <p><span class="about-news-date">2025</span>Co-author paper <strong>“Accelerating Neural ODEs: A Variational Formulation-based Approach”</strong> was accepted to <a class="about-news-venue" href="https://openreview.net/forum?id=trV41CpAK4">ICLR 2025</a>.</p>
       </article>
-      <details class="about-section__details about-news-more">
-        <summary class="about-news-toggle">
-          <span class="about-section__more">Show More</span>
-          <span class="about-section__less">Show Less</span>
-        </summary>
+      <input id="about-news-toggle" class="about-news-toggle-input" type="checkbox">
+      <div class="about-news-extra">
         <div class="about-news-year">
           <span class="about-news-rail-mark" aria-hidden="true"></span>
           <span>2024</span>
@@ -116,7 +113,11 @@ You can find my CV here: [Yuchen Wang's Curriculum Vitae](../assets/CV.pdf).
           <span class="about-news-node" aria-hidden="true"></span>
           <p><span class="about-news-date">2023</span>First-author paper <strong>“Temperature State Prediction for Lithium-ion Batteries Based on Improved Physics-Informed Neural Networks”</strong> was published in <a class="about-news-venue" href="https://www.sciencedirect.com/science/article/abs/pii/S2352152X23022600">Journal of Energy Storage</a>.</p>
         </article>
-      </details>
+      </div>
+      <label class="about-news-toggle" for="about-news-toggle">
+        <span class="about-section__more">Show More</span>
+        <span class="about-section__less">Show Less</span>
+      </label>
     </div>
   </section>
 
