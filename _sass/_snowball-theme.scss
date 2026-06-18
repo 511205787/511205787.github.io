@@ -169,6 +169,10 @@ figcaption > code {
 
 @media (min-width: 925px) {
   #main {
+    display: grid;
+    grid-template-columns: 240px minmax(0, 1fr);
+    column-gap: 4.5rem;
+    align-items: start;
     width: 92%;
     max-width: 1480px;
     padding-right: 2rem;
@@ -176,13 +180,21 @@ figcaption > code {
   }
 
   .sidebar {
-    width: 220px;
+    float: none;
+    width: auto;
+    margin-right: 0;
+    margin-left: 0;
   }
 
-  .page {
-    width: calc(100% - 300px);
+  .page,
+  .archive {
+    float: none;
+    width: 100%;
+    min-width: 0;
     padding-right: 0;
     padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 
