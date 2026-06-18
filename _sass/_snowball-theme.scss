@@ -748,6 +748,25 @@ textarea {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.about-awards-more {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-awards-more .about-section__extra {
+  order: 1;
+}
+
+.about-awards-more summary {
+  order: 2;
+  width: fit-content;
+  margin-top: 1rem;
+}
+
+.about-awards-more:not([open]) summary {
+  margin-top: 0;
+}
+
 .about-award-item,
 .about-service-card {
   position: relative;

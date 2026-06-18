@@ -132,7 +132,7 @@ You can find my CV here: [Yuchen Wang's Curriculum Vitae](../assets/CV.pdf).
       {% endfor %}
     </div>
 
-    <details class="about-section__details">
+    <details class="about-section__details about-awards-more">
       <summary>
         <span class="about-section__more">Show More</span>
         <span class="about-section__less">Show Less</span>
