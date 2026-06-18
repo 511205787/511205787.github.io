@@ -423,6 +423,10 @@ textarea {
   margin-top: 1rem;
 }
 
+.about-news-timeline .about-section__details {
+  margin-top: 0;
+}
+
 .about-section__details summary {
   display: inline-flex;
   align-items: center;
@@ -606,6 +610,8 @@ textarea {
   --timeline-rail: 38px;
   --timeline-gap: 14px;
   position: relative;
+  display: flex;
+  flex-direction: column;
   gap: 0;
   overflow: hidden;
   padding: 1.15rem 1.35rem 1.2rem;
@@ -720,6 +726,22 @@ textarea {
   color: #f08a91;
   font-size: 0.82rem;
   font-weight: 800;
+}
+
+.about-news-more {
+  display: contents;
+}
+
+.about-news-more:not([open]) .about-news-year,
+.about-news-more:not([open]) .about-news-item {
+  display: none;
+}
+
+.about-news-toggle {
+  order: 999;
+  width: fit-content;
+  margin-top: 0.9rem;
+  margin-left: calc(var(--timeline-rail) + var(--timeline-gap));
 }
 
 .about-award-list {
@@ -839,6 +861,10 @@ textarea {
     padding: 1rem;
   }
 
+  .about-news-toggle {
+    margin-left: calc(var(--timeline-rail) + var(--timeline-gap));
+  }
+
   .about-news-timeline::before {
     left: calc(1rem + 13px);
   }
@@ -861,5 +887,9 @@ textarea {
   .about-news-rail-mark,
   .about-news-node {
     display: none;
+  }
+
+  .about-news-toggle {
+    margin-left: 0;
   }
 }
