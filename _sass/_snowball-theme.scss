@@ -748,25 +748,6 @@ textarea {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.about-awards-more {
-  display: flex;
-  flex-direction: column;
-}
-
-.about-awards-more .about-section__extra {
-  order: 1;
-}
-
-.about-awards-more summary {
-  order: 2;
-  width: fit-content;
-  margin-top: 1rem;
-}
-
-.about-awards-more:not([open]) summary {
-  margin-top: 0;
-}
-
 .about-award-item,
 .about-service-card {
   position: relative;
@@ -811,6 +792,49 @@ textarea {
   color: rgba(247, 242, 232, 0.72);
   font-size: 0.94rem;
   line-height: 1.5;
+}
+
+.about-awards-toggle-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.about-award-item--extra {
+  display: none;
+}
+
+.about-awards-toggle-input:checked ~ .about-award-item--extra {
+  display: grid;
+}
+
+.about-awards-toggle {
+  grid-column: 1 / -1;
+  width: fit-content;
+  margin-top: 0.2rem;
+  color: var(--snow-link);
+  cursor: pointer;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.about-awards-toggle:hover {
+  color: var(--snow-link-hover);
+}
+
+.about-awards-toggle-input:focus-visible ~ .about-awards-toggle {
+  outline: 2px solid rgba(214, 161, 95, 0.68);
+  outline-offset: 4px;
+}
+
+.about-awards-toggle-input:checked ~ .about-awards-toggle .about-section__more {
+  display: none;
+}
+
+.about-awards-toggle-input:checked ~ .about-awards-toggle .about-section__less {
+  display: inline;
 }
 
 .about-service-grid {

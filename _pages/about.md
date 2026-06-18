@@ -130,23 +130,19 @@ You can find my CV here: [Yuchen Wang's Curriculum Vitae](../assets/CV.pdf).
         <p>{{ item }}</p>
       </article>
       {% endfor %}
-    </div>
-
-    <details class="about-section__details about-awards-more">
-      <summary>
+      <input id="about-awards-toggle" class="about-awards-toggle-input" type="checkbox">
+      {% for item in site.data.profile.honors offset:4 %}
+      {% assign award_parts = item | split: "—" %}
+      <article class="about-award-item about-award-item--extra">
+        <time>{{ award_parts.last | strip }}</time>
+        <p>{{ item }}</p>
+      </article>
+      {% endfor %}
+      <label class="about-awards-toggle" for="about-awards-toggle">
         <span class="about-section__more">Show More</span>
         <span class="about-section__less">Show Less</span>
-      </summary>
-      <div class="about-award-list about-section__extra">
-        {% for item in site.data.profile.honors offset:4 %}
-        {% assign award_parts = item | split: "—" %}
-        <article class="about-award-item">
-          <time>{{ award_parts.last | strip }}</time>
-          <p>{{ item }}</p>
-        </article>
-        {% endfor %}
-      </div>
-    </details>
+      </label>
+    </div>
   </section>
 
   <section class="about-section">
