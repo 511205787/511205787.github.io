@@ -65,6 +65,10 @@ You can find my CV here: [Yuchen Wang's Curriculum Vitae](../assets/CV.pdf).
       </div>
       <article class="about-news-item">
         <span class="about-news-node" aria-hidden="true"></span>
+        <p><span class="about-news-date">2026</span>Co-author paper <strong>“Lens: A Knowledge-Guided Foundation Model for Network Traffic”</strong> was accepted to <a class="about-news-venue" href="https://openreview.net/forum?id=cGDwTgnJIR">Transactions on Machine Learning Research (TMLR)</a>.</p>
+      </article>
+      <article class="about-news-item">
+        <span class="about-news-node" aria-hidden="true"></span>
         <p><span class="about-news-date">2026</span>First-author paper <strong>“WestWorld: A Knowledge-Encoded Scalable Trajectory World Model for Diverse Robotic Systems”</strong> was accepted to <span class="about-news-venue">ICML 2026</span> as a <span class="about-news-spotlight">spotlight (top 2.2%)</span>.</p>
       </article>
       <article class="about-news-item">
