@@ -45,3 +45,30 @@ contact:
     value: "+1 757-332-8055"
   - label: "Email"
     value: "ywang142@wm.edu"
+
+# News timeline. Newest entry goes on TOP. The About page automatically shows
+# the latest `news_visible` items and tucks everything older under "Show More";
+# year dividers are inserted for you. To add news, just prepend one entry below
+# — no need to touch the fold or the year headers.
+news_visible: 5
+news:
+  - year: 2026
+    body: 'Co-author paper <strong>“Lens: A Knowledge-Guided Foundation Model for Network Traffic”</strong> was accepted to <a class="about-news-venue" href="https://openreview.net/forum?id=cGDwTgnJIR">Transactions on Machine Learning Research (TMLR)</a>.'
+  - year: 2026
+    body: 'First-author paper <strong>“WestWorld: A Knowledge-Encoded Scalable Trajectory World Model for Diverse Robotic Systems”</strong> was accepted to <span class="about-news-venue">ICML 2026</span> as a <span class="about-news-spotlight">spotlight (top 2.2%)</span>.'
+  - year: 2026
+    body: 'First-author paper <strong>“WestWorld: A Knowledge-Encoded Scalable Trajectory World Model for Diverse Robotics”</strong> was accepted to the <span class="about-news-venue">ICLR 2026 Workshop on World Models: Understanding, Modelling and Scaling</span>.'
+  - year: 2026
+    body: 'Co-author paper <strong>“A Generalizable Physics-guided Causal Model for Trajectory Prediction in Autonomous Driving”</strong> was accepted to <span class="about-news-venue">ICRA 2026</span>.'
+  - year: 2025
+    body: 'First-author paper <strong>“A Generalizable Physics-Enhanced State Space Model for Long-Term Dynamics Forecasting in Complex Environments”</strong> was accepted to <a class="about-news-venue" href="https://icml.cc/virtual/2025/poster/46230">ICML 2025</a>.'
+  - year: 2025
+    body: 'Co-author paper <strong>“Accelerating Neural ODEs: A Variational Formulation-based Approach”</strong> was accepted to <a class="about-news-venue" href="https://openreview.net/forum?id=trV41CpAK4">ICLR 2025</a>.'
+  - year: 2024
+    body: 'First-author paper <strong>“A Deep Transfer Operator Learning Method for Temperature Field Reconstruction in a Lithium-Ion Battery Pack”</strong> was published in <a class="about-news-venue" href="https://ieeexplore.ieee.org/abstract/document/10462637">IEEE Transactions on Industrial Informatics</a>.'
+  - year: 2024
+    body: 'Co-author paper <strong>“Accelerating Neural Differential Equations for Irregularly-Sampled Dynamical Systems Using Variational Formulation”</strong> was presented at the <a class="about-news-venue" href="https://openreview.net/forum?id=C8tlOCzqll&noteId=l7nUWhiwog">ICLR 2024 Workshop on AI4DifferentialEquations In Science</a>.'
+  - year: 2024
+    body: 'Awarded <strong>Outstanding Graduate Award, Shanghai Jiao Tong University</strong>.'
+  - year: 2023
+    body: 'First-author paper <strong>“Temperature State Prediction for Lithium-ion Batteries Based on Improved Physics-Informed Neural Networks”</strong> was published in <a class="about-news-venue" href="https://www.sciencedirect.com/science/article/abs/pii/S2352152X23022600">Journal of Energy Storage</a>.'

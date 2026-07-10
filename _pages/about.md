@@ -59,68 +59,34 @@ You can find my CV here: [Yuchen Wang's Curriculum Vitae](../assets/CV.pdf).
   <section class="about-section">
     <h2 class="about-section__title">News</h2>
     <div class="about-news-timeline">
-      <div class="about-news-year">
-        <span class="about-news-rail-mark" aria-hidden="true"></span>
-        <span>2026</span>
-      </div>
-      <article class="about-news-item">
-        <span class="about-news-node" aria-hidden="true"></span>
-        <p><span class="about-news-date">2026</span>Co-author paper <strong>“Lens: A Knowledge-Guided Foundation Model for Network Traffic”</strong> was accepted to <a class="about-news-venue" href="https://openreview.net/forum?id=cGDwTgnJIR">Transactions on Machine Learning Research (TMLR)</a>.</p>
-      </article>
-      <article class="about-news-item">
-        <span class="about-news-node" aria-hidden="true"></span>
-        <p><span class="about-news-date">2026</span>First-author paper <strong>“WestWorld: A Knowledge-Encoded Scalable Trajectory World Model for Diverse Robotic Systems”</strong> was accepted to <span class="about-news-venue">ICML 2026</span> as a <span class="about-news-spotlight">spotlight (top 2.2%)</span>.</p>
-      </article>
-      <article class="about-news-item">
-        <span class="about-news-node" aria-hidden="true"></span>
-        <p><span class="about-news-date">2026</span>First-author paper <strong>“WestWorld: A Knowledge-Encoded Scalable Trajectory World Model for Diverse Robotics”</strong> was accepted to the <span class="about-news-venue">ICLR 2026 Workshop on World Models: Understanding, Modelling and Scaling</span>.</p>
-      </article>
-      <article class="about-news-item">
-        <span class="about-news-node" aria-hidden="true"></span>
-        <p><span class="about-news-date">2026</span>Co-author paper <strong>“A Generalizable Physics-guided Causal Model for Trajectory Prediction in Autonomous Driving”</strong> was accepted to <span class="about-news-venue">ICRA 2026</span>.</p>
-      </article>
-      <div class="about-news-year">
-        <span class="about-news-rail-mark" aria-hidden="true"></span>
-        <span>2025</span>
-      </div>
-      <article class="about-news-item">
-        <span class="about-news-node" aria-hidden="true"></span>
-        <p><span class="about-news-date">2025</span>First-author paper <strong>“A Generalizable Physics-Enhanced State Space Model for Long-Term Dynamics Forecasting in Complex Environments”</strong> was accepted to <a class="about-news-venue" href="https://icml.cc/virtual/2025/poster/46230">ICML 2025</a>.</p>
-      </article>
-      <article class="about-news-item">
-        <span class="about-news-node" aria-hidden="true"></span>
-        <p><span class="about-news-date">2025</span>Co-author paper <strong>“Accelerating Neural ODEs: A Variational Formulation-based Approach”</strong> was accepted to <a class="about-news-venue" href="https://openreview.net/forum?id=trV41CpAK4">ICLR 2025</a>.</p>
-      </article>
+      {%- assign news_visible = site.data.profile.news_visible | default: 5 -%}
+      {%- assign news_year = "" -%}
+      {%- assign news_folded = false -%}
+      {%- for item in site.data.profile.news -%}
+        {%- if forloop.index0 == news_visible and site.data.profile.news.size > news_visible -%}
       <details class="about-section__details about-news-more">
         <summary class="about-news-toggle">
           <span class="about-section__more">Show More</span>
           <span class="about-section__less">Show Less</span>
         </summary>
-        <div class="about-news-year">
-          <span class="about-news-rail-mark" aria-hidden="true"></span>
-          <span>2024</span>
-        </div>
-        <article class="about-news-item">
-          <span class="about-news-node" aria-hidden="true"></span>
-          <p><span class="about-news-date">2024</span>First-author paper <strong>“A Deep Transfer Operator Learning Method for Temperature Field Reconstruction in a Lithium-Ion Battery Pack”</strong> was published in <a class="about-news-venue" href="https://ieeexplore.ieee.org/abstract/document/10462637">IEEE Transactions on Industrial Informatics</a>.</p>
-        </article>
-        <article class="about-news-item">
-          <span class="about-news-node" aria-hidden="true"></span>
-          <p><span class="about-news-date">2024</span>Co-author paper <strong>“Accelerating Neural Differential Equations for Irregularly-Sampled Dynamical Systems Using Variational Formulation”</strong> was presented at the <a class="about-news-venue" href="https://openreview.net/forum?id=C8tlOCzqll&noteId=l7nUWhiwog">ICLR 2024 Workshop on AI4DifferentialEquations In Science</a>.</p>
-        </article>
-        <article class="about-news-item">
-          <span class="about-news-node" aria-hidden="true"></span>
-          <p><span class="about-news-date">2024</span>Awarded <strong>Outstanding Graduate Award, Shanghai Jiao Tong University</strong>.</p>
-        </article>
-        <div class="about-news-year">
-          <span class="about-news-rail-mark" aria-hidden="true"></span>
-          <span>2023</span>
-        </div>
-        <article class="about-news-item">
-          <span class="about-news-node" aria-hidden="true"></span>
-          <p><span class="about-news-date">2023</span>First-author paper <strong>“Temperature State Prediction for Lithium-ion Batteries Based on Improved Physics-Informed Neural Networks”</strong> was published in <a class="about-news-venue" href="https://www.sciencedirect.com/science/article/abs/pii/S2352152X23022600">Journal of Energy Storage</a>.</p>
-        </article>
+          {%- assign news_folded = true -%}
+        {%- endif -%}
+        {%- assign item_year = item.year | append: "" -%}
+        {%- if item_year != news_year -%}
+      <div class="about-news-year">
+        <span class="about-news-rail-mark" aria-hidden="true"></span>
+        <span>{{ item.year }}</span>
+      </div>
+          {%- assign news_year = item_year -%}
+        {%- endif -%}
+      <article class="about-news-item">
+        <span class="about-news-node" aria-hidden="true"></span>
+        <p><span class="about-news-date">{{ item.year }}</span>{{ item.body }}</p>
+      </article>
+      {%- endfor -%}
+      {%- if news_folded %}
       </details>
+      {%- endif %}
     </div>
   </section>
 
