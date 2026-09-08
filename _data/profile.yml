@@ -53,6 +53,8 @@ contact:
 news_visible: 5
 news:
   - year: 2026
+    body: 'Co-author paper <strong>“Identifying Invariant Physical Dynamics Across Multiple Environments”</strong> was accepted to <a class="about-news-venue" href="https://openreview.net/forum?id=xvQYvYEGhj&amp;noteId=FJvD03FvFx">Transactions on Machine Learning Research (TMLR)</a>.'
+  - year: 2026
     body: 'Co-author paper <strong>“Lens: A Knowledge-Guided Foundation Model for Network Traffic”</strong> was accepted to <a class="about-news-venue" href="https://openreview.net/forum?id=cGDwTgnJIR">Transactions on Machine Learning Research (TMLR)</a>.'
   - year: 2026
     body: 'First-author paper <strong>“WestWorld: A Knowledge-Encoded Scalable Trajectory World Model for Diverse Robotic Systems”</strong> was accepted to <span class="about-news-venue">ICML 2026</span> as a <span class="about-news-spotlight">spotlight (top 2.2%)</span>.'

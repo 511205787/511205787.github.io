@@ -68,6 +68,11 @@
         <a href="{{ post.codeurl }}">Code</a>
         {% assign has_prev = true %}
       {% endif %}
+      {% if post.dataseturl %}
+        {% if has_prev %}<span class="publication-card__sep">/</span>{% endif %}
+        <a href="{{ post.dataseturl }}">Dataset</a>
+        {% assign has_prev = true %}
+      {% endif %}
       {% if post.projecturl %}
         {% if has_prev %}<span class="publication-card__sep">/</span>{% endif %}
         <a href="{{ post.projecturl }}">Project Page</a>
